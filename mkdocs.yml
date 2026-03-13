@@ -1,0 +1,47 @@
+site_name: docs-ai-prompts
+site_description: Catálogo de prompts, playbooks e instruções reutilizáveis
+site_url: https://example.github.io/docs-ai-prompts/
+repo_name: docs-ai-prompts
+repo_url: https://github.com/example/docs-ai-prompts
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - tables
+
+nav:
+  - Início: index.md
+  - Taxonomia: taxonomy.md
+  - Contribuição: contribution.md
+  - Categorias:
+      - LinkedIn:
+          - Visão geral: linkedin/index.md
+          - Avaliação de perfil: linkedin/profile-review.md
+      - Azure DevOps:
+          - Visão geral: azure-devops/index.md
+          - Criação de épicos: azure-devops/epics.md
+      - Platform Engineering:
+          - Visão geral: platform/index.md
+          - Playbooks: platform/playbooks.md
+      - Arquitetura:
+          - Visão geral: architecture/index.md
+          - Documentação arquitetural: architecture/architecture-docs.md
+      - Pesquisa:
+          - Visão geral: research/index.md
+          - Deep research: research/deep-research.md
